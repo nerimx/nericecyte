@@ -1,0 +1,202 @@
+/* --------------------------
+CONFIGURACIÓN GENERAL
+--------------------------- */
+body {
+    font-family: 'Aptos', sans-serif;
+    font-size: 12pt; /* Tamaño solicitado */
+    color: #000000; /* Texto en negro */
+    margin: 0;
+    padding: 0;
+    background-color: #F0F7FF; /* Fondo de color muy suave y agradable */
+    line-height: 1.6;
+}
+
+/* --------------------------
+ENCABEZADO PRINCIPAL
+--------------------------- */
+.encabezado {
+    background: linear-gradient(135deg, #165DFF 0%, #4080FF 100%); /* Azul bonito degradado */
+    color: #FFFFFF;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.encabezado h1 {
+    margin: 0;
+    text-transform: uppercase; /* Todo en mayúsculas */
+    font-size: 18pt;
+    letter-spacing: 1px;
+}
+
+.intro-texto {
+    font-size: 12pt;
+    margin-top: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: normal;
+}
+
+/* --------------------------
+MENÚ DE NAVEGACIÓN - BOTONES
+--------------------------- */
+.menu-principal {
+    background-color: #FFFFFF;
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.menu-principal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Espacio entre botones */
+}
+
+.boton-menu {
+    background-color: #165DFF; /* Color azul solicitado */
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 8px; /* Bordes redondeados bonitos */
+    transition: all 0.3s ease; /* Efecto suave */
+    border: 2px solid transparent;
+}
+
+.boton-menu:hover {
+    background-color: #0F48C9; /* Azul más oscuro al pasar el ratón */
+    transform: translateY(-3px); /* Efecto de levantar el botón */
+    box-shadow: 0 6px 15px rgba(22, 93, 255, 0.25);
+}
+
+/* --------------------------
+CONTENEDOR Y SECCIONES
+--------------------------- */
+.contenedor {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.seccion-info {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 50px; /* Espacio grande entre secciones */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    scroll-margin-top: 100px; /* Para que al dar clic el menú no tape el título */
+}
+
+.titulo-seccion {
+    color: #165DFF; /* Títulos en azul */
+    text-transform: uppercase; /* Títulos en mayúsculas */
+    font-size: 16pt;
+    border-bottom: 2px solid #E0EBFF;
+    padding-bottom: 8px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.texto-contenido {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* --------------------------
+IMÁGENES
+--------------------------- */
+.contenedor-imagen {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+    margin-top: 15px;
+}
+
+.contenedor-imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.contenedor-imagen img:hover {
+    transform: scale(1.03); /* Efecto bonito en imágenes */
+}
+
+.galeria-doble {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* --------------------------
+SECCIÓN ESPECIAL INGLÉS
+--------------------------- */
+.seccion-ingles {
+    background-color: #F5F9FF;
+    border-left: 5px solid #165DFF;
+}
+
+/* --------------------------
+REFERENCIAS
+--------------------------- */
+.bloque-referencias {
+    background-color: #F8FAFC;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.subtitulo-referencia {
+    color: #165DFF;
+    text-transform: uppercase;
+    font-size: 11pt;
+    margin: 15px 0 5px 0;
+}
+
+.lista-referencias {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.lista-referencias li {
+    margin-bottom: 5px;
+}
+
+/* --------------------------
+PIE DE PÁGINA
+--------------------------- */
+.pie-pagina {
+    background-color: #165DFF;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* --------------------------
+ADAPTABILIDAD (CELULARES)
+--------------------------- */
+@media (max-width: 768px) {
+    .galeria-doble {
+        grid-template-columns: 1fr;
+    }
+
+    .boton-menu {
+        padding: 10px 15px;
+        font-size: 11pt;
+    }
+
+    .encabezado h1 {
+        font-size: 14pt;
+    }
+}
